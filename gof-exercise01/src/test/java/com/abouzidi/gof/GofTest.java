@@ -8,12 +8,12 @@ public class GofTest {
 
 	@Test
 	public void test() {
-		Mobile mobile1 = MobileFactory.getInstance().createMobile(MobileType.SAMSUNG);
-		Mobile mobile2 = MobileFactory.getInstance().createMobile(MobileType.IPHONE);
-		Mobile mobile3 = MobileFactory.getInstance().createMobile(MobileType.WINDOWSPHONE);
-		assertThat(mobile1, instanceOf(SamSung.class));
-		assertThat(mobile2, instanceOf(IPhone.class));
-		assertThat(mobile3, instanceOf(WindowsPhone.class));
+		Mobile mobileOne = MobileFactory.getInstance().createMobile(MobileType.SAMSUNG);
+		Mobile mobileTwo = MobileFactory.getInstance().createMobile(MobileType.IPHONE);
+		Mobile mobileThree = MobileFactory.getInstance().createMobile(MobileType.WINDOWSPHONE);
+		assertThat(mobileOne, instanceOf(SamSung.class));
+		assertThat(mobileTwo, instanceOf(IPhone.class));
+		assertThat(mobileThree, instanceOf(WindowsPhone.class));
 	}
 
 }
