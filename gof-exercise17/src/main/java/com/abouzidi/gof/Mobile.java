@@ -12,6 +12,7 @@ public class Mobile implements FlyweightMobile {
 		this.mobileType = mobileType;
 	}
 
+	@Override
 	public void communicateOverNetwork(String network) {
 		LOG.info("communication over " + network);
 	}
